@@ -25,6 +25,7 @@ from ...test_tokenization_common import TokenizerTesterMixin
 
 
 class BioGptTokenizationTest(TokenizerTesterMixin, unittest.TestCase):
+    from_pretrained_id = "microsoft/biogpt"
     tokenizer_class = BioGptTokenizer
     test_rust_tokenizer = False
 
